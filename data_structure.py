@@ -37,3 +37,25 @@ fruits.remove('jackfruit')
 print('Remove item from list - ', fruits)
 
 print('Clear list - ', fruits.clear())
+
+print('----------------------------------------------------')
+
+# 2) List as queue
+from collections import deque
+queue = deque(["Eric", "John", "Michael"])
+print(queue)
+
+queue.append('Omkar')
+print('Append queue - ', queue)
+
+queue.popleft()
+print('Left who first arrives - ', queue)
+
+print('----------------------------------------------------')
+
+# 3) List comprehensions
+print('List comprehensions')
+print('Table of 2 ', [x * 2 for x in range(1, 10+1)])
+
+matrix = []
+print('3 x 3 Matrix ', [[x + 1 for x in range(3)] for i in range(3)])
