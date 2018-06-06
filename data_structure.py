@@ -59,3 +59,17 @@ print('Table of 2 ', [x * 2 for x in range(1, 10+1)])
 
 matrix = []
 print('3 x 3 Matrix ', [[x + 1 for x in range(3)] for i in range(3)])
+
+print('----------------------------------------------------')
+
+# 4) Tuples and Sequences
+t = ('male', 'female')
+print('Tuple ', t)
+
+v = ([1, 2, 3], [3, 2, 1])
+print('Tuple with mutable objects ', v)
+
+print('----------------------------------------------------')
+
+# 5) Sets
+
