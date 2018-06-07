@@ -72,4 +72,54 @@ print('Tuple with mutable objects ', v)
 print('----------------------------------------------------')
 
 # 5) Sets
+basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+print(basket)                      # show that duplicates have been removed
 
+print('orange in basket', 'orange' in basket)                 # fast membership testing
+
+print('crabgrass in basket', 'crabgrass' in basket)
+
+
+# Demonstrate set operations on unique letters from two words
+
+a = set('abracadabra')
+b = set('alacazam')
+print(a)                                  # unique letters in a
+
+print(a - b)                              # letters in a but not in b
+
+print(a | b)                              # letters in a or b or both
+
+print(a & b)                              # letters in both a and b
+
+print(a ^ b)                              # letters in a or b but not both
+
+a = {x for x in 'abracadabra' if x not in 'abc'}
+print('Set comprehensions ', a)
+
+print('----------------------------------------------------')
+
+# 6) Dictionaries
+tel = {'jack': 4098, 'sape': 4139}
+tel['guido'] = 4127
+print(tel)
+
+print('Value of jack - ', tel['jack'])
+
+del tel['sape']
+print('Delete sape - ', tel)
+
+tel['irv'] = 4127
+print('Add irv - ', tel)
+
+print('list of keys - ', list(tel.keys()))
+
+print('list of keys sorted - ', sorted(tel.keys()))
+
+print('guido in tel - ', 'guido' in tel)
+
+print('jack not in tel - ', 'jack' not in tel)
+
+# 7) Dictionary comprehensions
+d = {x: x**2 for x in range(1, 10+1)}
+print('Dictionary comprehensions - ', d)
